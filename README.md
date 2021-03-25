@@ -4,7 +4,7 @@ This is a simple project that asks the user what is their name and what is their
 
 ## What do I want to achieve from this?
 
-I am a newbie in programming world and I love experimenting things. This is one of such experiments. If you have come here somehow and you are also a newbie, you are welcome to make changes and create a PR.
+I am a newbie in the programming world and I love to experiment. This is one of such experiments. If you have come here somehow and you are also a newbie, you are welcome to make changes and create a PR.
 
 ## Some general things that will come to your mind while reading my code:
 
