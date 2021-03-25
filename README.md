@@ -1,6 +1,6 @@
 # What's the project about?
 
-This is a simple project that asks the user what is their name and what is their dream vacation place. After the user gives the asked values it asks them if they want to suggest it to their friend. If they say no the programming ends listing the name/names of user/users and their dream vacation place. If they input yes the program continues.
+This is a simple project that asks the user what is their name and what is their dream vacation place. After the user gives the asked values it asks them if they want to suggest it to their friend. If they say no the program ends listing the name/names of user/users and their dream vacation place. If they input yes the program continues.
 
 ## What do I want to achieve from this?
 
