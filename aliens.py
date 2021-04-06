@@ -13,11 +13,11 @@ def ask(content: str, choices: list, not_enter_content=None) -> str:
 
 
 def ask_share_friend() -> str:
-    question_content = "\nWould you like to share this with your friend/friends? (yes/no) (y/n): "
+    question_content = "\nWould you like to share this with your friend/friends? (y/n): "
     not_enter_content = "You have to enter either yes or no."
 
-    yes_choices = ["yes", "y"]
-    no_choices = ["no", "n"]
+    yes_choices = ["y"]
+    no_choices = ["n"]
 
     choices = yes_choices + no_choices
 
