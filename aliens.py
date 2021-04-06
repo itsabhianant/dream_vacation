@@ -1,3 +1,17 @@
+def ask(content: str, choices: list, not_enter_content=None) -> str:
+    """Ask a question
+
+    If it asks the question stored in the content argument and the answer is other than the choices argument, print the not_enter_content argument and ask the question again
+    """
+    answer = input(content)
+
+    if answer in choices:
+        return answer
+    elif not_enter_content:
+        print(not_enter_content)
+    return ask(content, choices, not_enter_content)
+
+
 dream_vacations = {}
 
 polling_active = True
