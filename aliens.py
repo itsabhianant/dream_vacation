@@ -12,6 +12,15 @@ def ask(content: str, choices: list, not_enter_content=None) -> str:
     return ask(content, choices, not_enter_content)
 
 
+def ask_share_friend() -> str:
+    question_content = "\nWould you like to share this with your friend/friends? (yes/no): "
+    not_enter_content = "You have to enter either yes or no."
+    choices = ["yes", "no"]
+
+    answer = ask(question_content, choices, not_enter_content)
+    return answer
+
+
 dream_vacations = {}
 
 polling_active = True
@@ -22,7 +31,7 @@ while polling_active:
      
     dream_vacations[name] = vacation
 
-    repeat = input("\nWould you like to share this with your friend/friends? (yes/no): ")
+    repeat = ask_share_friend()
     if repeat == 'no':
         polling_active = False
 
