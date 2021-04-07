@@ -13,12 +13,20 @@ def ask(content: str, choices: list, not_enter_content=None) -> str:
 
 
 def ask_share_friend() -> str:
-    question_content = "\nWould you like to share this with your friend/friends? (yes/no): "
+    question_content = "\nWould you like to share this with your friend/friends? (y/n): "
     not_enter_content = "You have to enter either yes or no."
-    choices = ["yes", "no"]
+
+    yes_choices = ["y"]
+    no_choices = ["n"]
+
+    choices = yes_choices + no_choices
 
     answer = ask(question_content, choices, not_enter_content)
-    return answer
+
+    if answer in yes_choices:
+        return True
+    else:
+        return False
 
 
 dream_vacations = {}
@@ -32,7 +40,7 @@ while polling_active:
     dream_vacations[name] = vacation
 
     repeat = ask_share_friend()
-    if repeat == 'no':
+    if not repeat:
         polling_active = False
 
 print("---Poll Results---")
